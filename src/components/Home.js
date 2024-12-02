@@ -10,7 +10,7 @@ function Home() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('${process.env.PUBLIC_URL}/images/background.jpg')",
+          backgroundImage: "url('/images/background.jpg')",
           filter: 'blur(2px)', // Minimal blur effect
         }}
       ></div>

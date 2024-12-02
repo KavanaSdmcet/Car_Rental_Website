@@ -7,12 +7,14 @@ import About from './components/About';
 
 function App() {
   return (
+    
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cars" element={<CarListing />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
