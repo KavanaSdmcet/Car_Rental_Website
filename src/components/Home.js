@@ -10,7 +10,7 @@ function Home() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/background.jpg')",
+          backgroundImage: "url('https://cdn.dribbble.com/users/13754/screenshots/6969494/car-rental-website-design.png')",
           filter: 'blur(2px)', // Minimal blur effect
         }}
       ></div>
