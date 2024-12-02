@@ -1,6 +1,5 @@
 {
-  "homepage": "https://KavanaSdmcet.github.io/Car_Rental_Website",
-  "deploy": "gh-pages -d build -r https://github.com/KavanaSdmcet/Car_Rental_Website.git",
+  
   "name": "car-rental-website",
   "version": "0.1.0",
   "private": true,
