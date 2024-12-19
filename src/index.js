@@ -4,6 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const express = require('express');
+const authRoutes = require('./routes/auth');
+const carRoutes = require('./routes/cars');
+
+const app = express();
+
+app.use(express.json());
+app.use('/auth', authRoutes);
+app.use('/cars', carRoutes);
+
+app.listen(5000, () => console.log('Backend running on port 5000'));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
