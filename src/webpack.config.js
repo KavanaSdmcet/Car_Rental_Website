@@ -1,20 +1,15 @@
-const path = require('path');
-
 module.exports = {
-    // Other configurations...
     resolve: {
         fallback: {
-            zlib: require.resolve("browserify-zlib"),
-            querystring: require.resolve("querystring-es3"),
-            path: require.resolve("path-browserify"),
-            crypto: require.resolve("crypto-browserify"),
-            stream: require.resolve("stream-browserify"),
-            util: require.resolve("util/"),
-            buffer: require.resolve("buffer/"),
-            fs: false, // `fs` cannot be polyfilled for the browser.
-            url: require.resolve("url/"),
-            http: require.resolve("stream-http"),
-            net: false, // `net` is Node.js-specific.
-        },
-    },
-};
+          "fs": false,  // We don't need 'fs' in the browser
+          "net": false, // 'net' is a server-side module
+          "http": false, // We don't need 'http' in the browser
+          "path": require.resolve("path-browserify"), 
+          "stream": require.resolve("stream-browserify"),
+          "crypto": require.resolve("crypto-browserify"),
+          "zlib": require.resolve("browserify-zlib"),
+          "querystring": require.resolve("querystring-es3"),
+        }
+      }
+    }      
+  

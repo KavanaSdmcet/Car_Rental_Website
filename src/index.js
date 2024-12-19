@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const express = require('express');
-const authRoutes = require('./routes/auth');
-const carRoutes = require('./routes/cars');
+const authRoutes = require('./routes/auth.js');
+const carRoutes = require('./routes/cars.js');
 
 const app = express();
 

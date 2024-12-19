@@ -48,6 +48,12 @@
   "stream-browserify": "^3.0.0",
   
     
+  "stream-http": "^3.2.0",
+  
+    
+  "url": "^0.11.4",
+  
+    
   "util": "^0.12.5",
   
     
@@ -153,7 +159,13 @@
   "postcss": "^8.4.49",
   
     
-  "postcss-cli": "^11.0.0"
+  "postcss-cli": "^11.0.0",
+  
+    
+  "webpack": "^5.97.1",
+  
+    
+  "webpack-cli": "^5.1.4"
   
   },
   
